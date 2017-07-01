@@ -1,0 +1,1 @@
+echo $(osascript -e 'tell application "Finder"' -e 'activate' -e 'choose color default color {65535, 65535, 65535}' -e 'end tell' | ruby -e 'puts STDIN.read.split(",").map{|c| (c.to_f/65535.0)}.join(",")')
