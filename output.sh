@@ -1,6 +1,5 @@
 IFS=',' read -ra COLORS <<< "$1"
 result="UIColor(red: ${COLORS[0]}, green: ${COLORS[1]}, blue: ${COLORS[2]}, alpha: 1)"
-
 cat << EOB
 {"items": [
 	{
