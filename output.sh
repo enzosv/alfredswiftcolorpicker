@@ -6,13 +6,10 @@ result="UIColor(red: ${COLORS[0]}, green: ${COLORS[1]}, blue: ${COLORS[2]}, alph
 cat << EOB
 {"items": [
 	{
-		# "icon": {
-  #           "path": "temp.png"
-  #       },
 		"uid": "color",
-		"title": "$rgb",
+		"title": "Convert to Swift",
 		"subtitle": "$result",
-		"arg":"$result"
+		"arg": "$result"
 	}
 ]}
 EOB
